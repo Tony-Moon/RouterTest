@@ -1,0 +1,13 @@
+.container {
+    width: 400px;
+    height: 100px;
+    background-color: salmon;
+}
+
+.text{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: darkslategray;
+}
