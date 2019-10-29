@@ -10,6 +10,7 @@ import (
 func main() {
 	router := mux.NewRouter()
 	router.PathPrefix("/").Handler(http.FileServer(rice.MustFindBox("website").HTTPBox()))
+	router.PathPrefix("/").Handler(http.FileServer(rice.MustFindBox("page2").HTTPBox()))
 	http.ListenAndServe(":9000", router)
 
 }
